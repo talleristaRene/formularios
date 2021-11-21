@@ -1,8 +1,27 @@
-<form action="">
-    <tr>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-    </tr>
+<form method="post" action="/registro">
+    <div>
+        <label for="platos">Lavar Platos</label>
+        <input type="text" id="platos" name="platos" >
+    </div>
+    <div>
+        <label for="">Cocinar</label>
+        <input type="text" id="cocinar" name="cocinar" >
+    </div>
+    <div>
+        <label for="">Barrer</label>
+        <input type="text" id="barrer" name="barrer" >
+    </div>
+    <div>
+        <label for="">Planchar</label>
+        <input type="text" id="planchar" name="planchar" >
+    </div>
+    <div>
+        <button name="guardar" type="submit" class="">Guardar Actividades</button>
+    </div>
+
+    <div class="informacion">
+        <ul>
+            <li>Lavar Platos: {{platos}}</li>
+        </ul>
+    </div>
 </form>
