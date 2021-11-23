@@ -1,4 +1,5 @@
 <% include templates/header.ejs%>
+<% include templates/navBar.ejs%>
    <div class="contenedor">
        <h1>Formulario de Registro de Actividades</h1>
        <div class="contenedor-botones">
@@ -7,5 +8,31 @@
         </center>
        </div>
    </div>
+   <div id="caja">
+    <h1 class="titulo-lista"></h1>
+    <div id="contenedor__tabla">
+        <table class="tabla">
+            <thead class="tabla__cabecera">
+                <tr>
+                    <th id="cabecera__nombre"><p>Lavar Platos</p></th>
+                    <th id="cabecera__nombre"><p>Cocinar</p></th>
+                    <th id="cabecera__nombre"><p>Barrer </p></th>
+                    <th id="cabecera__nombre"><p>Planchar </p></th>
+                </tr>
+                <tbody class="tabla__cuerpo">
+                    <% listaActividades.forEach(function(listaActividades) { %>
+                        <tr>
+                            <th><%= listaActividades.platos%></th>
+                            <th><%= listaActividades.cocinar%></th>
+                            <th><%= listaActividades.barrer%></th>
+                            <th><%= listaActividades.planchar%></th>
+                    <% }) %>
+                </tbody>
+            </thead>
+        </table>
+    </div>
+</div>
+
+
    <script src="../javascripts/validaciones.js"></script>
-<% include templates/header.ejs%>
+<% include templates/footer.ejs%>

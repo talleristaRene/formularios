@@ -1,27 +1,31 @@
-<form method="post" action="/registro">
-    <div>
-        <label for="platos">Lavar Platos</label>
-        <input type="text" id="platos" name="platos" >
-    </div>
-    <div>
-        <label for="">Cocinar</label>
-        <input type="text" id="cocinar" name="cocinar" >
-    </div>
-    <div>
-        <label for="">Barrer</label>
-        <input type="text" id="barrer" name="barrer" >
-    </div>
-    <div>
-        <label for="">Planchar</label>
-        <input type="text" id="planchar" name="planchar" >
-    </div>
-    <div>
-        <button name="guardar" type="submit" class="">Guardar Actividades</button>
-    </div>
-
-    <div class="informacion">
-        <ul>
-            <li>Lavar Platos: {{platos}}</li>
-        </ul>
-    </div>
-</form>
+<div class="contenedor__formulario">
+    <form method="post" action="/registro" class="formulario">
+        <div>
+            <label for="platos" class="formulario__label">Lavar Platos</label>
+            <input type="text" class="formulario__input" id="platos" name="platos" required>
+        </div>
+        <div>
+            <label class="formulario__label" for="">Cocinar</label>
+            <input class="formulario__input" type="text" id="cocinar" name="cocinar">
+        </div>
+        <div>
+            <label class="formulario__label" for="">Barrer</label>
+            <input class="formulario__input" type="text" id="barrer" name="barrer">
+        </div>
+        <div>
+            <label class="formulario__label" for="">Planchar</label>
+            <input class="formulario__input" type="text" id="planchar" name="planchar">
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio" name="" id="input" value="" checked="checked">
+                Radio Box
+            </label>
+        </div>
+        <div>
+            <center>
+                <button class="formulario__boton" name="guardar" type="submit" class="">Guardar Actividades</button>
+            </center>
+        </div>
+    </form>
+</div>
