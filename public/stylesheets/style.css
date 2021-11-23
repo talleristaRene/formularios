@@ -59,6 +59,7 @@ body {
   border-style: groove;
   border-color: var(--color-borde);
   border-radius: 10px;
+  background-color: rgba(218, 175, 238, 0.596);
 }
 
 .contenedor .contenedor-botones{
@@ -159,7 +160,7 @@ button {
 }
 .formulario{
   box-shadow: 0 0 20px 1px rgba(0,0,0, .3);
-  background-color: var(--color-primario);
+  background-color: var(--color-fondo);
   position: relative;
   margin-top: 30px;
   max-width: 100%;
@@ -209,6 +210,13 @@ button {
 
 
 /* Radio Buttom */
+.radio{
+  padding-bottom: 30px;
+}
+.radio h3{
+  justify-content: center;
+  color: var(--color-letra);
+}
 .radio label{
   color: var(--color-letra);
 }
